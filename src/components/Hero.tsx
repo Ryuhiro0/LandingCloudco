@@ -1,4 +1,4 @@
-import { memo } from "react";
+﻿import { memo } from "react";
 import { ArrowRight } from "lucide-react";
 import { useReveal } from "@/hooks/useReveal";
 
@@ -16,7 +16,7 @@ function HeroBase() {
           <span className="text-gradient">software de alto rendimiento.</span>
         </h1>
         <p className="mx-auto mt-6 max-w-2xl text-base text-muted-foreground sm:text-lg">
-          CloudCo desarrolla soluciones digitales que escalan. Desde automatización
+          CloudCO desarrolla soluciones digitales que escalan. Desde automatización
           inteligente hasta equipos dedicados para transformar tus procesos en
           ventajas competitivas.
         </p>
@@ -44,10 +44,10 @@ function HeroBase() {
               <span className="h-3 w-3 rounded-full bg-tertiary/70" />
             </div>
             <span className="font-mono mx-auto text-xs text-muted-foreground">
-              cloudco.io/dashboard
+              CloudCO.io/dashboard
             </span>
             <span className="font-mono text-xs text-muted-foreground">
-              CloudCo Dev Terminal
+              CloudCO Dev Terminal
             </span>
           </div>
           <div className="grid grid-cols-[200px_1fr] gap-4 p-6 text-left">
@@ -77,3 +77,4 @@ function HeroBase() {
 }
 
 export const Hero = memo(HeroBase);
+

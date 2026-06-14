@@ -1,8 +1,8 @@
-import { memo } from "react";
+﻿import { memo } from "react";
 import { motion } from "framer-motion";
 import { TrendingDown, BarChart3, Quote, Zap } from "lucide-react";
 import { useReveal } from "@/hooks/useReveal";
-import liveDevVideo from "@/assets/cloudco-live-dev.mp4";
+import liveDevVideo from "@/assets/CloudCO-live-dev.mp4";
 
 function BenefitsBase() {
   const ref = useReveal<HTMLDivElement>();

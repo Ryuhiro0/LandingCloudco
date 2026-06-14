@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+﻿import { createFileRoute } from "@tanstack/react-router";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { Benefits } from "@/components/Benefits";
@@ -11,13 +11,13 @@ import { Footer } from "@/components/Footer";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "CloudCo — Software de alto rendimiento" },
+      { title: "CloudCO Software de alto rendimiento" },
       {
         name: "description",
         content:
-          "CloudCo desarrolla soluciones digitales que escalan: ingeniería full-stack, automatización inteligente e IA para acelerar tu tiempo al mercado.",
+          "CloudCO desarrolla soluciones digitales que escalan: ingeniería full-stack, automatización inteligente e IA para acelerar tu tiempo al mercado.",
       },
-      { property: "og:title", content: "CloudCo — Software de alto rendimiento" },
+      { property: "og:title", content: "CloudCO Software de alto rendimiento" },
       {
         property: "og:description",
         content:
@@ -49,3 +49,4 @@ function Index() {
     </main>
   );
 }
+

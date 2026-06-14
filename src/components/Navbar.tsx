@@ -1,4 +1,4 @@
-import { memo, useState } from "react";
+﻿import { memo, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { useScrollY } from "@/hooks/useScrollY";
 import logo from "@/assets/logo.png";
@@ -23,9 +23,15 @@ function NavbarBase() {
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <a href="#top" className="flex items-center gap-2">
-          <img src={logo} alt="CloudCo" width={32} height={32} className="h-8 w-8" />
-          <span className="font-display text-lg font-bold tracking-tight">CloudCo</span>
+        <a href="#top" className="flex items-center gap-3">
+          <img
+            src={logo}
+            alt="CloudCO"
+            width={40}
+            height={40}
+            className="h-10 w-auto object-contain"
+          />
+          <span className="font-display text-lg font-bold tracking-tight">CloudCO</span>
         </a>
 
         <ul className="hidden items-center gap-8 md:flex">
@@ -88,3 +94,4 @@ function NavbarBase() {
 }
 
 export const Navbar = memo(NavbarBase);
+

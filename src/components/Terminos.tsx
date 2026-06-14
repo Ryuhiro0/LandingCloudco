@@ -1,4 +1,4 @@
-import { memo, useState } from "react";
+﻿import { memo, useState } from "react";
 import { ScrollText, ChevronDown, ChevronUp, ArrowLeft } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 
@@ -6,58 +6,58 @@ const SECTIONS = [
   {
     id: "objeto",
     title: "1. Objeto del Contrato",
-    content: `El presente documento regula los términos y condiciones bajo los cuales CloudCo (en adelante "CloudCo") presta sus servicios de desarrollo de software, automatización e inteligencia artificial a sus clientes (en adelante "el Cliente").
+    content: `El presente documento regula los términos y condiciones bajo los cuales CloudCO (en adelante "CloudCO") presta sus servicios de desarrollo de software, automatización e inteligencia artificial a sus clientes (en adelante "el Cliente").
 
 La aceptación de estos términos implica el conocimiento y conformidad del Cliente con las condiciones aquí establecidas, de conformidad con lo previsto en la Ley 527 de 1999 (Comercio Electrónico) y la Ley 1341 de 2009 (TIC) de la República de Colombia.`,
   },
   {
     id: "servicios",
     title: "2. Descripción de los Servicios",
-    content: `CloudCo ofrece los siguientes servicios:
+    content: `CloudCO ofrece los siguientes servicios:
 
-• Desarrollo de software a medida (Full-Stack, Mobile, Cloud Native).
-• Automatización de procesos empresariales mediante RPA, workflows e integración de modelos LLM.
-• Consultoría tecnológica y diseño de arquitecturas digitales escalables.
-• Mantenimiento, soporte técnico y actualizaciones de los sistemas desarrollados.
+â€¢ Desarrollo de software a medida (Full-Stack, Mobile, Cloud Native).
+â€¢ Automatización de procesos empresariales mediante RPA, workflows e integración de modelos LLM.
+â€¢ Consultoría tecnológica y diseño de arquitecturas digitales escalables.
+â€¢ Mantenimiento, soporte técnico y actualizaciones de los sistemas desarrollados.
 
 Cada proyecto se formaliza mediante un acuerdo de servicios independiente, el cual detallará el alcance, plazos, entregables y condiciones económicas particulares.`,
   },
   {
     id: "propiedad",
     title: "3. Propiedad Intelectual",
-    content: `Los derechos de autor sobre el software desarrollado por CloudCo se transferirán al Cliente únicamente cuando así se pacte expresamente en el acuerdo específico y previa cancelación total de los honorarios acordados.
+    content: `Los derechos de autor sobre el software desarrollado por CloudCO se transferirán al Cliente únicamente cuando así se pacte expresamente en el acuerdo específico y previa cancelación total de los honorarios acordados.
 
-Hasta tanto no se efectúe dicha transferencia, CloudCo conserva la titularidad plena del código fuente, diseños, algoritmos y demás elementos creativos. CloudCo se reserva el derecho de reutilizar metodologías, componentes genéricos y conocimientos técnicos acumulados durante la prestación de sus servicios.`,
+Hasta tanto no se efectúe dicha transferencia, CloudCO conserva la titularidad plena del código fuente, diseños, algoritmos y demás elementos creativos. CloudCO se reserva el derecho de reutilizar metodologías, componentes genéricos y conocimientos técnicos acumulados durante la prestación de sus servicios.`,
   },
   {
     id: "confidencialidad",
     title: "4. Confidencialidad y Protección de Datos",
-    content: `CloudCo se compromete a tratar con absoluta confidencialidad toda información técnica, comercial o estratégica del Cliente, de conformidad con la Ley 1266 de 2008 (Habeas Data) y la Ley 1581 de 2012 (Protección de Datos Personales) de Colombia.
+    content: `CloudCO se compromete a tratar con absoluta confidencialidad toda información técnica, comercial o estratégica del Cliente, de conformidad con la Ley 1266 de 2008 (Habeas Data) y la Ley 1581 de 2012 (Protección de Datos Personales) de Colombia.
 
-Los datos personales recopilados a través de nuestra plataforma serán utilizados exclusivamente para la prestación de los servicios contratados. El Cliente podrá ejercer sus derechos de acceso, corrección, actualización y supresión de datos comunicándose a nuestro correo oficial. CloudCo no cederá información personal a terceros sin el consentimiento expreso del titular, salvo obligación legal.`,
+Los datos personales recopilados a través de nuestra plataforma serán utilizados exclusivamente para la prestación de los servicios contratados. El Cliente podrá ejercer sus derechos de acceso, corrección, actualización y supresión de datos comunicándose a nuestro correo oficial. CloudCO no cederá información personal a terceros sin el consentimiento expreso del titular, salvo obligación legal.`,
   },
   {
     id: "responsabilidad",
     title: "5. Limitación de Responsabilidad",
-    content: `CloudCo no será responsable por daños indirectos, lucro cesante o perjuicios derivados del uso o imposibilidad de uso del software entregado, siempre que CloudCo haya actuado con la diligencia debida.
+    content: `CloudCO no será responsable por daños indirectos, lucro cesante o perjuicios derivados del uso o imposibilidad de uso del software entregado, siempre que CloudCO haya actuado con la diligencia debida.
 
-La responsabilidad máxima de CloudCo ante el Cliente, en cualquier caso, estará limitada al valor total de los honorarios efectivamente pagados en el acuerdo específico que dio origen a la reclamación.`,
+La responsabilidad máxima de CloudCO ante el Cliente, en cualquier caso, estará limitada al valor total de los honorarios efectivamente pagados en el acuerdo específico que dio origen a la reclamación.`,
   },
   {
     id: "pagos",
     title: "6. Condiciones de Pago",
-    content: `Los honorarios por los servicios de CloudCo serán establecidos en cada acuerdo particular. Salvo pacto en contrario, se aplicará el siguiente esquema:
+    content: `Los honorarios por los servicios de CloudCO serán establecidos en cada acuerdo particular. Salvo pacto en contrario, se aplicará el siguiente esquema:
 
-• 35% de anticipo al inicio del proyecto para reservar disponibilidad del equipo y cubrir costos iniciales.
-• 35% al completar y aprobar la fase de desarrollo principal.
-• 30% restante contra entrega final y aceptación del Cliente.
+â€¢ 35% de anticipo al inicio del proyecto para reservar disponibilidad del equipo y cubrir costos iniciales.
+â€¢ 35% al completar y aprobar la fase de desarrollo principal.
+â€¢ 30% restante contra entrega final y aceptación del Cliente.
 
 El incumplimiento en los pagos podrá dar lugar a la suspensión de los servicios tras 15 días calendario de mora. Los porcentajes anteriores son una guía base y pueden ajustarse según las condiciones particulares de cada proyecto.`,
   },
   {
     id: "garantia",
     title: "7. Garantía de los Servicios",
-    content: `CloudCo ofrece una garantía de 30 días calendario sobre los entregables de software, contados desde la fecha de aceptación formal por parte del Cliente. Durante este período, CloudCo corregirá sin costo adicional los defectos imputables al desarrollo original.
+    content: `CloudCO ofrece una garantía de 30 días calendario sobre los entregables de software, contados desde la fecha de aceptación formal por parte del Cliente. Durante este período, CloudCO corregirá sin costo adicional los defectos imputables al desarrollo original.
 
 Esta garantía no aplica sobre modificaciones realizadas por el Cliente o terceros, ni sobre incompatibilidades originadas en cambios de infraestructura o plataformas externas no contempladas en el alcance inicial del proyecto.`,
   },
@@ -78,9 +78,9 @@ De no lograrse acuerdo, las partes podrán acudir a los mecanismos alternativos 
   {
     id: "modificaciones",
     title: "10. Modificaciones",
-    content: `CloudCo se reserva el derecho de modificar estos términos y condiciones en cualquier momento. Los cambios serán notificados al Cliente con al menos 15 días de antelación a su entrada en vigencia, a través de los medios de contacto registrados.
+    content: `CloudCO se reserva el derecho de modificar estos términos y condiciones en cualquier momento. Los cambios serán notificados al Cliente con al menos 15 días de antelación a su entrada en vigencia, a través de los medios de contacto registrados.
 
-El uso continuado de los servicios de CloudCo tras la notificación de cambios implica la aceptación de los nuevos términos por parte del Cliente.`,
+El uso continuado de los servicios de CloudCO tras la notificación de cambios implica la aceptación de los nuevos términos por parte del Cliente.`,
   },
 ];
 
@@ -107,7 +107,7 @@ function TerminosBase() {
               <ScrollText className="text-primary" size={14} />
             </div>
             <span className="font-mono text-xs text-muted-foreground">
-              CloudCo · Legal
+              CloudCO · Legal
             </span>
           </div>
         </div>
@@ -125,7 +125,7 @@ function TerminosBase() {
             <span className="text-gradient">Condiciones</span>
           </h1>
           <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
-            Lea detenidamente las condiciones bajo las cuales CloudCo
+            Lea detenidamente las condiciones bajo las cuales CloudCO
             presta sus servicios, de conformidad con la legislación colombiana vigente.
           </p>
           <div className="mt-4 flex items-center justify-center gap-4">
@@ -146,14 +146,14 @@ function TerminosBase() {
           {/* Aviso introductorio */}
           <div className="mb-8 rounded-2xl border border-primary/20 bg-primary/5 px-6 py-4">
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Al contratar los servicios de CloudCo, el Cliente declara haber
+              Al contratar los servicios de CloudCO, el Cliente declara haber
               leído, comprendido y aceptado en su totalidad los presentes
               términos y condiciones. Para consultas legales, escríbanos a{" "}
               <a
-                href="mailto:legal@cloudco.io"
+                href="mailto:legal@CloudCO.io"
                 className="text-primary underline underline-offset-2 hover:opacity-80 transition-opacity"
               >
-                legal@cloudco.io
+                legal@CloudCO.io
               </a>
             </p>
           </div>
@@ -194,7 +194,7 @@ function TerminosBase() {
           {/* Footer legal */}
           <div className="mt-10 rounded-2xl border border-border bg-surface/40 px-6 py-5 text-center">
             <p className="font-mono text-xs text-muted-foreground">
-              © 2026 CloudCo · Santa Marta, Magdalena, Colombia
+              © 2026 CloudCO · Santa Marta, Magdalena, Colombia
             </p>
             <p className="font-mono mt-1 text-xs text-muted-foreground">
               Todos los derechos reservados bajo las leyes de la República de Colombia.

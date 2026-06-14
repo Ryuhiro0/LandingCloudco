@@ -1,4 +1,4 @@
-import { memo } from "react";
+﻿import { memo } from "react";
 import { User } from "lucide-react";
 import { useReveal } from "@/hooks/useReveal";
 
@@ -9,7 +9,7 @@ function TestimonialBase() {
       <div ref={ref} className="reveal mx-auto max-w-3xl px-6 text-center">
         <div className="font-display text-7xl leading-none text-primary/60">"</div>
         <p className="font-display -mt-4 text-2xl font-medium leading-snug sm:text-3xl">
-          La ingeniería de CloudCo no solo resolvió nuestros problemas técnicos,
+          La ingeniería de CloudCO no solo resolvió nuestros problemas técnicos,
           transformó nuestra manera de operar. En 3 meses logramos lo que
           planeábamos para el año.
         </p>
@@ -28,3 +28,4 @@ function TestimonialBase() {
 }
 
 export const Testimonial = memo(TestimonialBase);
+

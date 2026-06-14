@@ -10,6 +10,7 @@ import {
 
 import appCss from "../styles.css?url";
 import logoIco from "@/assets/logo.ico?url";
+import logoPng from "@/assets/logo.png?url";
 
 function NotFoundComponent() {
   return (
@@ -90,6 +91,23 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         rel: "icon",
         href: logoIco,
+      },
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "32x32",
+        href: logoPng,
+      },
+      {
+        rel: "icon",
+        type: "image/png",
+        sizes: "16x16",
+        href: logoPng,
+      },
+      {
+        rel: "apple-touch-icon",
+        sizes: "180x180",
+        href: logoPng,
       },
     ],
   }),

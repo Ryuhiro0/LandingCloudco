@@ -1,4 +1,4 @@
-@import "tailwindcss" source(none);
+﻿@import "tailwindcss" source(none);
 @source "../src";
 @import "tw-animate-css";
 
@@ -37,7 +37,7 @@
 
 :root, .dark {
   --radius: 0.5rem;
-  /* CloudCo brand */
+  /* CloudCO brand */
   --background: oklch(0.17 0.03 230);            /* #0B1117-ish */
   --foreground: oklch(1 0 0);
   --surface: oklch(0.22 0.035 230);              /* #0F1923 */
@@ -110,3 +110,4 @@
   .reveal { opacity: 1; transform: none; transition: none; }
   html { scroll-behavior: auto; }
 }
+

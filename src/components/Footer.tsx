@@ -1,4 +1,4 @@
-import { memo } from "react";
+﻿import { memo } from "react";
 import { Github, Linkedin, Twitter } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 import logo from "@/assets/logo.png";
@@ -8,9 +8,15 @@ function FooterBase() {
     <footer className="border-t border-border bg-surface/40">
       <div className="mx-auto grid max-w-7xl gap-10 px-6 py-16 md:grid-cols-4">
         <div className="md:col-span-2">
-          <div className="flex items-center gap-2">
-            <img src={logo} alt="CloudCo" width={32} height={32} className="h-8 w-8" />
-            <span className="font-display text-lg font-bold">CloudCo</span>
+          <div className="flex items-center gap-3">
+            <img
+              src={logo}
+              alt="CloudCO"
+              width={40}
+              height={40}
+              className="h-10 w-auto object-contain"
+            />
+            <span className="font-display text-lg font-bold">CloudCO</span>
           </div>
           <p className="mt-4 max-w-sm text-sm text-muted-foreground">
             Ingeniería de software de alto nivel para empresas que no se
@@ -64,7 +70,7 @@ function FooterBase() {
 
       <div className="border-t border-border py-6 text-center">
         <p className="font-mono text-xs text-muted-foreground">
-          © 2026 CloudCo S.A.S. Todos los derechos reservados. · Santa Marta, Colombia
+          © 2026 CloudCO S.A.S. Todos los derechos reservados. · Santa Marta, Colombia
         </p>
       </div>
     </footer>

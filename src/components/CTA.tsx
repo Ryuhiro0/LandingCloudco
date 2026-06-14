@@ -1,14 +1,14 @@
-import { memo, useState } from "react";
+﻿import { memo, useState } from "react";
 import { ArrowRight, CheckCircle, Loader2 } from "lucide-react";
 import { Link } from "@tanstack/react-router";
 import { useReveal } from "@/hooks/useReveal";
 import emailjs from "@emailjs/browser";
 
-// ─── Configura estos 3 valores con los de tu cuenta EmailJS ───────────────────
+// â”€â”€â”€ Configura estos 3 valores con los de tu cuenta EmailJS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const EMAILJS_SERVICE_ID  = "service_9ih78ss";
 const EMAILJS_TEMPLATE_ID = "template_pndnmej";
 const EMAILJS_PUBLIC_KEY  = "AdJrmg6dpFMqiQ6ra";
-// ─────────────────────────────────────────────────────────────────────────────
+// â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 type FormState = "idle" | "submitting" | "success" | "error";
 
@@ -84,7 +84,7 @@ function CTABase() {
         {/* Header */}
         <div className="text-center">
           <h2 className="text-3xl font-bold sm:text-5xl">
-            ¿Tu negocio está listo para escalar?
+            Â¿Tu negocio está listo para escalar?
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
             Agenda una sesión técnica gratuita. Diagnosticamos tus procesos y
@@ -97,7 +97,7 @@ function CTABase() {
           {formState === "success" ? (
             <div className="flex flex-col items-center gap-4 py-8 text-center">
               <CheckCircle className="text-primary" size={48} />
-              <h3 className="text-xl font-semibold">¡Mensaje enviado!</h3>
+              <h3 className="text-xl font-semibold">Â¡Mensaje enviado!</h3>
               <p className="text-muted-foreground">
                 Recibimos tu información. Nos pondremos en contacto contigo muy pronto.
               </p>
@@ -260,7 +260,7 @@ function CTABase() {
                     >
                       Política de Privacidad
                     </Link>{" "}
-                    de CloudCo.{" "}
+                    de CloudCO.{" "}
                     <span className="text-primary" aria-hidden="true">*</span>
                   </label>
                 </div>
@@ -289,7 +289,7 @@ function CTABase() {
                   {formState === "submitting" ? (
                     <>
                       <Loader2 size={16} className="animate-spin" />
-                      Enviando…
+                      Enviandoâ€¦
                     </>
                   ) : (
                     <>
